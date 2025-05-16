@@ -1,0 +1,56 @@
+.calendar-container {
+  padding: 100px 40px;
+}
+
+.calendar-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calendar-card {
+  width: 140px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.calendar-header {
+  background-color: #e32020;
+  color: white;
+  font-size: 16px;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+.calendar-body {
+  flex-grow: 1;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: black;
+  line-height: 1.4;
+}
+
+.calendar-day {
+  margin-bottom: 8px;
+}
+
+.calendar-day-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.calendar-footer {
+  border-top: 1.8px solid black;
+  padding: 8px 12px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+

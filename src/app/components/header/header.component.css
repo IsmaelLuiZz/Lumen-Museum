@@ -1,0 +1,50 @@
+.header-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(190, 190, 190, 0);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #FA7070;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d9ffc2;
+}
+
+.btn-comprar {
+  background-color: #fa7070;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-right: 100px;
+}
+
+.btn-comprar:hover {
+  background-color: #f16e46;
+}

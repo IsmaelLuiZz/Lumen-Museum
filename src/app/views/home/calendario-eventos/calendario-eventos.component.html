@@ -1,0 +1,16 @@
+<div class="calendar-container">
+  <div class="calendar-grid">
+    <div *ngFor="let event of events" class="calendar-card">
+      <div class="calendar-header">{{ event.date | date: 'MMMM' }}</div>
+      <div class="calendar-body">
+        <div class="calendar-day">
+          <div class="calendar-day-label">Dia:</div>
+          <div>{{ event.date | date: 'dd/MM/yyyy' }}</div>
+        </div>
+      </div>
+      <div class="calendar-footer">
+        {{ event.title }}
+      </div>
+    </div>
+  </div>
+</div>
