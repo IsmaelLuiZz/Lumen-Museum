@@ -1,0 +1,8 @@
+<div [@fadeInOut]>
+  <h2>Login</h2>
+  <form (ngSubmit)="onLogin()">
+    <input type="text" placeholder="Username" [(ngModel)]="email" name="user" required>
+    <input type="password" placeholder="Password" [(ngModel)]="password" name="pass" required>
+    <button type="submit">Login</button>
+  </form>
+</div>

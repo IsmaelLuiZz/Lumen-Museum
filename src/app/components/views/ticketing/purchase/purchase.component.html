@@ -1,0 +1,8 @@
+<div [@fadeInOut]>
+  <h2>Purchase Ticket</h2>
+  <select [(ngModel)]="exhibition">
+    <option *ngFor="let e of exhibitions" [value]="e">{{ e }}</option>
+  </select>
+  <button (click)="buy()">Buy Ticket</button>
+</div>
+

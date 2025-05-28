@@ -1,0 +1,55 @@
+<section class="art-showcases">
+  <div class="header">
+    <h2>Nosso Showcases</h2>
+    <p>
+      Mergulhe na arte e no design de vanguarda. Nossas exposições combinam perfeitamente criatividade e tecnologia,
+proporcionando uma experiência completa para cada visitante.
+    </p>
+  </div>
+
+  <div class="tabs">
+    <button
+      class="tab"
+      [class.active]="activeTab === 'showcases'"
+      (click)="activeTab = 'showcases'"
+    >
+      Showcases
+    </button>
+    <button
+      class="tab"
+      [class.active]="activeTab === 'programs'"
+      (click)="activeTab = 'programs'"
+    >
+      Programs
+    </button>
+  </div>
+
+  <div class="cards" *ngIf="activeTab === 'showcases'">
+    <div class="card">
+      <div class="icon">💬</div>
+      <h3>Van Gogh: Entre Luz e Sombra</h3>
+      <p>Uma jornada intensa pela vida e obra do gênio pós-impressionista. Explore suas pinceladas vibrantes, autorretratos profundos e paisagens emocionais que revolucionaram a arte moderna.</p>
+      <div class="image-placeholder"></div>
+      <a class="action" href="#">View →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">✨</div>
+      <h3>Egito Antigo: Mistérios Sob a Areia</h3>
+      <p>Desvende os segredos dos faraós, múmias e tesouros milenares. Esta exposição mergulha na riqueza arqueológica e na cultura fascinante de uma das civilizações mais enigmáticas da história.</p>
+      <div class="image-placeholder"></div>
+      <a class="action" href="#">Learn →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">✔️</div>
+      <h3>Futuro Digital: Arte e Tecnologia</h3>
+      <p>Uma experiência interativa que une criatividade e inovação. Descubra como a inteligência artificial, a realidade virtual e as mídias digitais estão transformando a expressão artística no século XXI.</p>
+      <div class="image-placeholder"></div>
+      <a class="action" href="#">Enter →</a>
+    </div>
+  </div>
+
+  <!-- Futuramente: conteúdo para aba "Programs" -->
+</section>
+

@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eeeadd;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: #eeeadd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #4d3a2e;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+}
+
+.menu li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #4d3a2e;
+}
+
+.join-btn {
+  background-color: #7d5a43;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 8rem;
+  align-items: flex-start;
+  background-color: #eeeadd;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 1;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.content {
+  flex: 1;
+  max-width: 540px;
+  color: #4d3a2e;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.buttons :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.visit {
+  background-color: #7d5a43;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.discover {
+  border: 1px solid #7d5a43;
+  color: #7d5a43;
+  background: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
